@@ -31,7 +31,20 @@
 
 // constで定義した配列は変更可能
 
-const val5 = ["dog", "cat"];
-val5[0] = "bird";
-val5.push("monkey");
-console.log(val5);
+// アロー関数
+const func1 = function func1(str) {
+  return str;
+};
+console.log(func1("テスト"));
+
+// アロー関数
+const func2 = (str) => {
+  return str;
+};
+console.log(func2("テスト２"));
+
+const func3 = (str) => str;
+console.log("テスト３");
+
+const func4 = (num1, num2) => num1 + num2;
+console.log(func4(10, 20));
